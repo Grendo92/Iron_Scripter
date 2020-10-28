@@ -1,0 +1,2 @@
+$FileInfo = Get-ChildItem -path "F:\" -Recurse 
+$FileInfo | Measure-Object -Property Length -Sum -Average | Format-List -Property Count,Average,Sum,@{n="ComputerName";e={$env:COMPUTERNAME}},@{n="Date";e={Get-date}}
