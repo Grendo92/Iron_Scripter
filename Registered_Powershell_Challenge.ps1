@@ -28,4 +28,3 @@ Function Get-WindowsRegistrationInfo {
     
 }
 
-Get-WindowsRegistrationInfo -Computername fs-141 | gm
